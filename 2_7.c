@@ -17,16 +17,16 @@ struct ListNode* reverseList(struct ListNode* head)
 	while (head != NULL)
 	{//第一回NULL 1 2 3 4 5 ====> 1->2->3->4->5
 	//       👆 👆
-	//			head      
+	//	     head      
 	//      tail now
 	//  =====>NULL<-1 2->3->4->5
 	//             👆👆
-	//			      head
-	//			 tail now
+	//	          head
+	//	     tail now
 	//最后 NULL<-1<-2<-3<-4<-5  越界
 	//                      👆 👆
-	//						     head
-	//					    tail now            
+	//			    head
+	//		       tail now            
 		head = head->next;//
 		now->next = tail;//
 		tail = now;
